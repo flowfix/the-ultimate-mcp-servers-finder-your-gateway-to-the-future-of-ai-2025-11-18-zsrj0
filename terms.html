@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Ultimate MCP Servers Finder - Your gateway to discovering and monetizing AI servers. Brandable TLD, high-growth niche, monetization-ready platform.">
+    <meta name="keywords" content="MCP servers, AI discovery, server finder, monetization, AI tools">
+    <meta name="author" content="MCP Servers Finder">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="The Ultimate MCP Servers Finder: Your Gateway to the Future of AI">
+    <meta property="og:description" content="Ready to dominate AI? Discover, list, and monetize MCP servers with the ultimate finder platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcpserversfinder.com">
+    <title>Terms of Service - MCP Servers Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #5B4BFF;
+            --secondary-color: #EEF0FF;
+            --accent-color: #00E5A8;
+        }
+        
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        
+        .primary-gradient {
+            background: linear-gradient(135deg, #5B4BFF 0%, #7c6bff 100%);
+        }
+        
+        .accent-gradient {
+            background: linear-gradient(135deg, #00E5A8 0%, #00d4a8 100%);
+        }
+        
+        .dark-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 40px rgba(91, 75, 255, 0.2);
+        }
+        
+        .smooth-transition {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(91, 75, 255, 0.3);
+        }
+        
+        .button-primary {
+            background-color: #5B4BFF;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .button-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.4);
+        }
+        
+        .button-secondary {
+            background-color: transparent;
+            color: #5B4BFF;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            border: 2px solid #5B4BFF;
+            transition: all 300ms ease-out;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+        
+        .button-secondary:hover {
+            background-color: #5B4BFF;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .feature-card {
+            background-color: rgba(30, 41, 59, 0.8);
+            border: 1px solid rgba(91, 75, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(91, 75, 255, 0.5);
+            box-shadow: 0 20px 60px rgba(91, 75, 255, 0.2);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.1) 0%, rgba(0, 229, 168, 0.05) 100%);
+            border: 1px solid rgba(91, 75, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 60px rgba(91, 75, 255, 0.2);
+            border-color: rgba(91, 75, 255, 0.4);
+        }
+        
+        .faq-item {
+            background-color: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(91, 75, 255, 0.2);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #e2e8f0;
+            transition: color 300ms ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+            color: #5B4BFF;
+        }
+        
+        .faq-answer {
+            margin-top: 1rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            transition: all 300ms ease-out;
+        }
+        
+        .faq-answer.hidden {
+            display: none;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(91, 75, 255, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 229, 168, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .star-rating {
+            display: flex;
+            gap: 0.25rem;
+        }
+        
+        .star-rating .fa-star {
+            color: #fbbf24;
+            font-size: 0.875rem;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(91, 75, 255, 0.1);
+        }
+        
+        .nav-link {
+            color: #cbd5e1;
+            transition: color 300ms ease-out;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: #5B4BFF;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #5B4BFF;
+            transition: width 300ms ease-out;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        section {
+            position: relative;
+            z-index: 1;
+        }
+
+        .policy-section {
+            background-color: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(91, 75, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .policy-section h2 {
+            color: #5B4BFF;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .policy-section h3 {
+            color: #e2e8f0;
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .policy-section p {
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section ul {
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-gray-950 bg-opacity-95 backdrop-blur-md border-b border-purple-900 border-opacity-20">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="https://flowfix.github.io/the-ultimate-mcp-servers-finder-your-gateway-to-the-future-of-ai-2025-11-18-zsrj0" class="flex items-center gap-2 z-20">
+                <div class="w-10 h-10 rounded-full primary-gradient flex items-center justify-center">
+                    <i class="fas fa-rocket text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold text-white hidden sm:inline">MCP Finder</span>
+            </a>
+
+            <!-- Back Button -->
+            <a href="https://flowfix.github.io/the-ultimate-mcp-servers-finder-your-gateway-to-the-future-of-ai-2025-11-18-zsrj0" class="nav-link text-sm font-medium">
+                ← Back
+            </a>
+        </nav>
+    </header>
+
+    <!-- Terms of Service Content -->
+    <section class="py-20 md:py-32 bg-gradient-to-b from-gray-950 to-gray-900 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 md:mb-16">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                    Terms of Service
+                </h1>
+                <p class="text-lg text-gray-400">
+                    Last updated: January 2025
+                </p>
+            </div>
+
+            <!-- Introduction -->
+            <div class="policy-section">
+                <h2>1. Introduction</h2>
+                <p>
+                    Welcome to MCP Servers Finder ("Company," "we," "us," "our," or "Service"). These Terms of Service ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and MCP Servers Finder regarding your use of our website, platform, and related services (collectively, the "Platform").
+                </p>
+                <p>
+                    By accessing, browsing, or using the MCP Servers Finder Platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree with any part of these Terms, you must immediately cease using the Platform and refrain from accessing it in the future.
+                </p>
+                <p>
+                    We reserve the right to modify these Terms at any time without prior notice. Your continued use of the Platform following the posting of revised Terms constitutes your acceptance of the changes. We encourage you to review these Terms periodically to stay informed about any updates.
+                </p>
+            </div>
+
+            <!-- User Agreements -->
+            <div class="policy-section">
+                <h2>2. User Agreements and Eligibility</h2>
+                
+                <h3>2.1 Age and Capacity</h3>
+                <p>
+                    By using the MCP Servers Finder Platform, you represent and warrant that you are at least 18 years of age or the age of majority in your jurisdiction, whichever is greater. If you are under the age of majority, you may only use the Platform with the express consent and supervision of a parent or legal guardian who agrees to be bound by these Terms.
+                </p>
+
+                <h3>2.2 Authority and Accuracy</h3>
+                <p>
+                    You represent and warrant that you have the full right, power, and authority to enter into this agreement and to perform all obligations hereunder. You further represent that all information you provide to us is accurate, current, and complete, and that you will promptly update any information that becomes inaccurate or incomplete.
+                </p>
+
+                <h3>2.3 Account Registration</h3>
+                <p>
+                    If you create an account on our Platform, you agree to:
+                </p>
+                <ul>
+                    <li>Provide accurate, truthful, and complete information during registration</li>
+                    <li>Maintain the confidentiality of your account credentials</li>
+                    <li>Accept responsibility for all activities that occur under your account</li>
+                    <li>Promptly notify us of any unauthorized use of your account</li>
+                    <li>Not share your account credentials with third parties</li>
+                </ul>
+
+                <h3>2.4 Account Termination</h3>
+                <p>
+                    We reserve the right to terminate or suspend your account immediately and without notice if we believe you have violated these Terms or engaged in any unlawful or harmful behavior. Upon termination, your right to use the Platform ceases immediately.
+                </p>
+            </div>
+
+            <!-- Acceptable Use -->
+            <div class="policy-section">
+                <h2>3. Acceptable Use Policy</h2>
+
+                <h3>3.1 Permitted Uses</h3>
+                <p>
+                    The Platform is provided for lawful purposes only. You agree to use the Platform solely in accordance with these Terms and all applicable laws, regulations, and third-party rights. You agree not to use the Platform in any manner that could damage, disable, overburden, or impair our servers or networks.
+                </p>
+
+                <h3>3.2 Prohibited Conduct</h3>
+                <p>
+                    You agree not to engage in any of the following prohibited activities:
+                </p>
+                <ul>
+                    <li>Violating any applicable laws, regulations, or third-party rights</li>
+                    <li>Engaging in harassment, abuse, or threatening behavior toward other users</li>
+                    <li>Posting or transmitting obscene, offensive, or defamatory content</li>
+                    <li>Attempting to gain unauthorized access to the Platform or other users' accounts</li>
+                    <li>Introducing viruses, malware, or other harmful code to the Platform</li>
+                    <li>Engaging in spam, phishing, or fraudulent activities</li>
+                    <li>Impersonating another person or entity</li>
+                    <li>Scraping, crawling, or otherwise automated collection of data without permission</li>
+                    <li>Reverse engineering or attempting to discover the source code or underlying mechanisms of the Platform</li>
+                    <li>Selling, trading, or transferring your account or access credentials</li>
+                    <li>Using the Platform to promote or sell illegal goods or services</li>
+                </ul>
+
+                <h3>3.3 Content Standards</h3>
+                <p>
+                    All content you submit to the Platform must comply with these Terms and applicable laws. We reserve the right to remove, edit, or refuse any content that violates these standards or that we deem inappropriate at our sole discretion. You retain ownership of content you create but grant us a license to use, display, and distribute such content on the Platform.
+                </p>
+
+                <h3>3.4 Intellectual Property</h3>
+                <p>
+                    The Platform and all content, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio) are owned by MCP Servers Finder, its licensors, or other providers of such material and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or transmit any content without our prior written consent.
+                </p>
+            </div>
+
+            <!-- Limitation of Liability -->
+            <div class="policy-section">
+                <h2>4. Limitation of Liability and Disclaimer of Warranties</h2>
+
+                <h3>4.1 Disclaimer of Warranties</h3>
+                <p>
+                    THE PLATFORM IS PROVIDED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
+                </p>
+                <p>
+                    WE DO NOT WARRANT THAT THE PLATFORM WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS. WE DO NOT WARRANT THE ACCURACY, COMPLETENESS, OR RELIABILITY OF ANY INFORMATION OR CONTENT ON THE PLATFORM.
+                </p>
+
+                <h3>4.2 Limitation of Liability</h3>
+                <p>
+                    TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL MCP SERVERS FINDER, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, LICENSORS, OR SERVICE PROVIDERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+                </p>
+                <p>
+                    IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS EXCEED THE AMOUNT YOU HAVE PAID TO US, IF ANY, IN THE TWELVE MONTHS PRECEDING THE CLAIM. IF YOU HAVE NOT PAID US ANY AMOUNT, OUR TOTAL LIABILITY SHALL NOT EXCEED ONE HUNDRED DOLLARS ($100).
+                </p>
+
+                <h3>4.3 Assumption of Risk</h3>
+                <p>
+                    You assume all risk associated with your use of the Platform. You acknowledge that you are using the Platform at your own risk and that you are solely responsible for any harm or damage resulting from your use of the Platform or reliance on information provided therein.
+                </p>
+
+                <h3>4.4 Third-Party Links and Content</h3>
+                <p>
+                    The Platform may contain links to third-party websites and resources. We are not responsible for the accuracy, completeness, legality, or appropriateness of any third-party content. Your access to and use of third-party websites is at your own risk and subject to their terms and conditions. We do not endorse or warrant any third-party products or services.
+                </p>
+            </div>
+
+            <!-- Indemnification -->
+            <div class="policy-section">
+                <h2>5. Indemnification</h2>
+                <p>
+                    You agree to indemnify, defend, and hold harmless MCP Servers Finder and its officers, directors, employees, agents, licensors, and service providers from and against any and all claims, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to:
+                </p>
+                <ul>
+                    <li>Your use of the Platform</li>
+                    <li>Your violation of these Terms</li>
+                    <li>Your violation of any applicable law or regulation</li>
+                    <li>Your violation of any third-party rights</li>
+                    <li>Any content you submit or transmit through the Platform</li>
+                    <li>Your conduct or actions in connection with the Platform</li>
+                </ul>
+            </div>
+
+            <!-- Termination -->
+            <div class="policy-section">
+                <h2>6. Termination</h2>
+                <p>
+                    We may terminate or suspend your account and access to the Platform immediately, without notice or liability, for any reason, including if we believe you have violated these Terms. Upon termination, your right to use the Platform ceases immediately. We are not responsible for any loss or damage resulting from termination of your account.
+                </p>
+                <p>
+                    You may terminate your account at any time by contacting us at the email address provided below. Upon termination, we will cease providing services to you, though we may retain certain information as required by law.
+                </p>
+            </div>
+
+            <!-- Governing Law -->
+            <div class="policy-section">
+                <h2>7. Governing Law and Jurisdiction</h2>
+                <p>
+                    These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to its conflict of law principles. Any legal action or proceeding arising out of or relating to these Terms or your use of the Platform shall be exclusively brought in the state or federal courts located in the jurisdiction specified in our Privacy Policy, and you irrevocably consent to the jurisdiction and venue of such courts.
+                </p>
+            </div>
+
+            <!-- Dispute Resolution -->
+            <div class="policy-section">
+                <h2>8. Dispute Resolution</h2>
+                <p>
+                    Before initiating any legal proceedings, you agree to attempt to resolve any dispute with us through good-faith negotiation. If negotiation fails, you agree to submit the dispute to binding arbitration in accordance with the rules of the American Arbitration Association (AAA). The arbitration shall be conducted by a single neutral arbitrator and shall take place in the jurisdiction specified in our Privacy Policy.
+                </p>
+                <p>
+                    BY AGREEING TO ARBITRATION, YOU ARE WAIVING YOUR RIGHT TO A JURY TRIAL AND YOUR RIGHT TO PARTICIPATE IN A CLASS ACTION LAWSUIT.
+                </p>
+            </div>
+
+            <!-- Modifications -->
+            <div class="policy-section">
+                <h2>9. Modifications to the Platform and Terms</h2>
+                <p>
+                    We reserve the right to modify, suspend, or discontinue the Platform or any portion thereof at any time, with or without notice. We also reserve the right to modify these Terms at any time. Your continued use of the Platform following the posting of revised Terms constitutes your acceptance of the changes.
+                </p>
+            </div>
+
+            <!-- Severability -->
+            <div class="policy-section">
+                <h2>10. Severability</h2>
+                <p>
+                    If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect. If a court finds any provision invalid, we will modify the provision to the minimum extent necessary to make it valid and enforceable while preserving the intent of the provision.
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="policy-section">
+                <h2>11. Contact Information</h2>
+                <p>
+                    If you have any questions about these Terms of Service or wish to report a violation, please contact us at:
+                </p>
+                <p>
+                    <strong>MCP Servers Finder</strong><br>
+                    Email: <a href="mailto:support@mcpserversfinder.com" class="text-purple-400 hover:text-purple-300">support@mcpserversfinder.com</a><br>
+                    Website: <a href="https://mcpserversfinder.com" class="text-purple-400 hover:text-purple-300">https://mcpserversfinder.com</a>
+                </p>
+                <p>
+                    We will make every effort to respond to your inquiry within 30 days of receipt.
+                </p>
+            </div>
+
+            <!-- Entire Agreement -->
+            <div class="policy-section">
+                <h2>12. Entire Agreement</h2>
+                <p>
+                    These Terms of Service, together with our Privacy Policy and any other policies or documents referenced herein, constitute the entire agreement between you and MCP Servers Finder regarding your use of the Platform and supersede all prior and contemporaneous agreements, whether written or oral, between the parties relating to the subject matter hereof.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-purple-900 border-opacity-20 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 rounded-full primary-gradient flex items-center justify-center">
+                            <i class="fas fa-rocket text-white"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">MCP Finder</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        The ultimate platform for discovering and monetizing MCP servers in the AI ecosystem.
+                    </p>
+                </div>
+
+                <!-- Product Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://flowfix.github.io/the-ultimate-mcp-servers-finder-your-gateway-to-the-future-of-ai-2025-11-18-zsrj0#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Features</a></li>
+                        <li><a href="https://flowfix.github.io/the-ultimate-mcp-servers-finder-your-gateway-to-the-future-of-ai-2025-11-18-zsrj0#benefits" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Benefits</a></li>
+                        <li><a href="https://mcpserversfinder.com" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Platform</a></li>
+                        <li><a href="https://flowfix.github.io/the-ultimate-mcp-servers-finder-your-gateway-to-the-future-of-ai-2025-11-18-zsrj0#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://flowfix.github.io/the-ultimate-mcp-servers-finder-your-gateway-to-the-future-of-ai-2025-11-18-zsrj0#about" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Careers</a></li>
+                        <li><a href="mailto:support@mcpserversfinder.com" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Links & Copyright -->
+            <div class="border-t border-purple-900 border-opacity-20 pt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <p class="text-gray-400 text-sm">
+                        © 2025 MCP Servers Finder. All rights reserved. Powered by Claude AI.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-purple-900 bg-opacity-30 border border-purple-700 border-opacity-30 flex items-center justify-center text-purple-300 hover:text-purple-200 transition-colors duration-300">
+                            <i class="fab fa-twitter text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-purple-900 bg-opacity-30 border border-purple-700 border-opacity-30 flex items-center justify-center text-purple-300 hover:text-purple-200 transition-colors duration-300">
+                            <i class="fab fa-github text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-purple-900 bg-opacity-30 border border-purple-700 border-opacity-30 flex items-center justify-center text-purple-300 hover:text-purple-200 transition-colors duration-300">
+                            <i class="fab fa-linkedin text-sm"></i>
+                        </a>
+                        <a href="mailto:support@mcpserversfinder.com" class="w-10 h-10 rounded-full bg-purple-900 bg-opacity-30 border border-purple-700 border-opacity-30 flex items-center justify-center text-purple-300 hover:text-purple-200 transition-colors duration-300">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+
+            // Add scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.policy-section').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 600ms ease-out, transform 600ms ease-out';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
